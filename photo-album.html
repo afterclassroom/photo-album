@@ -77,7 +77,7 @@ A photo album element including a slideshow view.
           this.onMutation(this, this.childrenUpdated);
         },
         thumbnailClicked: function(e, detail, sender) {
-          this.launch( sender.templateInstance.model.slide.index );
+          this.launch( sender.templateInstance.model.slide.index - 1 );
         },
         toggle: function() {
           if ( this._visible ) {
@@ -367,4 +367,3 @@ A photo album element including a slideshow view.
     })();
   </script>
 </polymer-element>
-
